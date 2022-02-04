@@ -1,0 +1,12 @@
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.center ul li {
+  background: #242424;
+  color: #fff;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

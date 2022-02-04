@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+.css.map
 .pnp.js
 
 # testing
@@ -19,6 +20,7 @@ package-lock.json
 .env.development.local
 .env.test.local
 .env.production.local
+.sass-cache
 
 npm-debug.log*
 yarn-debug.log*
