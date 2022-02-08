@@ -1,12 +1,1 @@
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.center ul li {
-  background: #242424;
-  color: #fff;
-  padding: 20px;
-}
-
-/*# sourceMappingURL=index.css.map */
+body{font-family:"Roboto",sans-serif;background:url(../../images/bg.jpg) no-repeat center center fixed;background-size:cover;-webkit-font-smoothing:antialiased}.box{width:100vw;height:100vh}.container{max-width:500px;margin:0 auto;display:flex;flex-direction:column;align-items:center}.container .form-search{width:100%;display:flex;margin:15% 0 10%}.container .form-search .search{width:100%;display:flex;padding:20px;border-radius:8px;border:none;background:rgba(1,77,90,.5);color:#fff;font-weight:300;letter-spacing:.5px}.container .form-search .search::placeholder{color:#fff}.box-city{width:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:40px 8%;border-radius:20px;background:rgba(1,77,90,.5)}.box-city .city-name{font-size:3em;color:#fff;font-weight:700;display:flex;align-items:flex-end}.box-city .city-name sup{padding:2px 5px;font-size:.18em;border-radius:5px;color:#526000;background:#fbff00;margin:0 0 12px 5px}.box-city .city-temp{font-size:5rem;font-weight:bold;color:#fff;text-align:center;display:flex;align-items:flex-start}.box-city .city-temp sup{font-size:.25em;border-radius:5px;color:#fafafa;margin-top:15px}.box-city .info{display:flex;flex-direction:column;align-items:center;margin-top:20px;color:#fff}.box-city .info .city-icon{width:100px;height:100px}@media only screen and (max-width: 600px){.search{padding:20px 15%}.city{padding:40px 20%}}/*# sourceMappingURL=index.css.map */
