@@ -11,6 +11,7 @@
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "sass": "^1.49.7",
+    "sass-reset": "^1.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -18,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch src/styles/scss:src/styles/css"
+    "sass": "sass --watch src/styles/scss:src/styles/css --style compressed"
   },
   "eslintConfig": {
     "extends": [
