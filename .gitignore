@@ -13,7 +13,6 @@
 /build
 
 # misc
-.env
 package-lock.json
 .DS_Store
 .env.local

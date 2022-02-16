@@ -5,27 +5,11 @@ const KEY_API = process.env.REACT_APP_OPEN_WEATHER_KEY;
 
 export const fetchWeather = async (query = false, lat, long) => {
     if (query) {
-        const {data} = await axios.get(BASE_URL,{
-            params: {
-                q: query,
-                appid: KEY_API,
-                lang: 'pt',
-                units: 'metric'
-            }
-        });
-
-        return data;
+        var params = {q: query,appid: KEY_API,lang: 'pt',units: 'metric'}
     } else {
-        const {data} = await axios.get(BASE_URL,{
-            params: {
-                lat: lat,
-                lon: long,
-                appid: KEY_API,
-                lang: 'pt',
-                units: 'metric'
-            }
-        });
-
-        return data;
+        var params = {lat: lat,lon: long,appid: KEY_API,lang: 'pt',units: 'metric'}
     }
+    const {data} = await axios.get(BASE_URL,{params: params});
+    console.log(data);
+    return data;
 }
