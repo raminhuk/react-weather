@@ -12,7 +12,6 @@ body{
         left: 0;
         top: 0;
         background: rgba(0, 0, 0, 0.26);
-        border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(25px);
         //-webkit-backdrop-filter: blur(25px);
@@ -43,7 +42,7 @@ body{
             width: 100%;
             display: flex;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 12px;
             border: none;
             background: rgba(0, 0, 0, 0.12);
             color: #fff;
@@ -66,7 +65,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 40px 8%;
-    border-radius: 20px;
+    border-radius: 15px;
     background: rgba(0, 0, 0, 0.12);
 
     .city-name {
@@ -87,7 +86,7 @@ body{
     }
     
     .city-temp {
-        font-size: 5rem;
+        font-size: 5em;
         font-weight: bold;
         color: #ffffff;
         text-align: center;
@@ -119,11 +118,11 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
-    .search {
-        padding: 20px 15%;
+    .box{
+        padding: 0 5%;
     }
 
-    .city {
-        padding: 40px 20%;
+    .box-city {
+        font-size: 0.8em;
     }
 }
