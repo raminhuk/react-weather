@@ -9,6 +9,12 @@ export const fetchWeather = async (query = false, lat, long) => {
     } else {
         var params = { lat: lat, lon: long, appid: KEY_API, lang: 'pt', units: 'metric' }
     }
-    const { data } = await axios.get(BASE_URL, { params: params });
+    const { data } = await axios.get(BASE_URL, 
+        { params: params })
+        .catch(function (error) {
+        if (error.response) {
+            return error.response
+      }
+    });
     return data;
 }
