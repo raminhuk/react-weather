@@ -116,6 +116,23 @@ body{
     
 }
 
+.not{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.icon-github{
+    width: 30px;
+    height: 30px;
+    box-sizing: content-box;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    z-index: 3;
+}
+
 @media only screen and (max-width: 600px) {
 
     .container .form-search{
