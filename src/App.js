@@ -1,19 +1,22 @@
 import React, { Fragment, useState, useEffect } from 'react';
+import ReactLoading from 'react-loading';
+
 import { fetchWeather } from './api/fetchWeather';
-
-
 
 function App() {
     const [location, setLocation] = useState(false);
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition((position) => {
             setLocation(true);
             const { latitude, longitude } = position.coords;
             const searchGeo = async (e) => {
+                setLoading(true);
                 const data = await fetchWeather(false, latitude, longitude);
+                setLoading(false);
                 setWeather(data);
             }
             searchGeo();
@@ -23,12 +26,14 @@ function App() {
 
     const search = async (e) => {
         if (e.key === 'Enter') {
+            setLoading(true);
             const data = await fetchWeather(query);
+            setLoading(false);
             setWeather(data);
             setQuery('');
         }
     }
- 
+
     return (
         <Fragment>
             <a href="https://github.com/raminhuk/react-weather" className="icon-github" target="_blanck">
@@ -41,12 +46,18 @@ function App() {
                     <span className="form-search">
                         <input type="text" className="search" placeholder="Digite uma cidade" value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} />
                     </span>
+
+                    {loading && (
+                        <ReactLoading type='spin' color="#FFF"/>
+                    )}
+
                     {weather.cod == 404 && (
                         <p className="not">
                             Cidade ou localização não encontrado
                         </p>
                     )}
-                    {(typeof weather.main != "undefined") ? (
+
+                    {(typeof weather.main != "undefined") && !loading ? (
                         <div className="box-city">
                             <h2 className="city-name">
                                 <span>{weather.name}</span>
