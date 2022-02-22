@@ -47,9 +47,9 @@ function App() {
                     </span>
 
                     {loading && (
-                        <ReactLoading color="#FFF" type='spin' />
+                        <ReactLoading className="loading" color="#FFF" type='spin' height={50} width={50} />
                     )}
-                    {weather.cod == 404 && (
+                    {weather.cod == 404 && !loading && (
                         <p className="not">
                             Cidade ou localização não encontrado
                         </p>

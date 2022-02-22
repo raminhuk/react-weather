@@ -133,6 +133,11 @@ body{
     z-index: 3;
 }
 
+.loading{
+    margin-top: 30%;
+    opacity: 0.8;
+}
+
 @media only screen and (max-width: 600px) {
 
     .container .form-search{
