@@ -1,10 +1,10 @@
 # React Weather
 Um aplicativo meteorológico simples desenvolvido com React
 
-##### [Live Demo](https://react-weather-raminhuk.vercel.app/) on Vercel
+##### [Live Demo](https://weather.fabra.dev/) on Vercel
 
 <p align="center">
-  <a src="https://react-weather-raminhuk.vercel.app" target="_blanck"><img src="./readme/exemplo.png" width="100%" height="auto" /></a>
+  <a src="https://weather.fabra.dev/" target="_blank"><img src="./readme/exemplo.png" width="100%" height="auto" /></a>
 </p>
 
 # API
